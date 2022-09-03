@@ -1,0 +1,172 @@
+.title {
+    text-align: center;
+}
+
+.title a {
+    color: gold;
+}
+
+a {
+    text-decoration: none;
+}
+
+html,
+body {
+    height: 100vh;
+    /* 很重要 */
+}
+
+#wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+    border-radius: 9px;
+}
+
+.post-detail {
+    font-size: 12px;
+    align-self: flex-start;
+    margin-top: .5rem;
+    margin-bottom: .2rem;
+    color: #939393;
+}
+
+.post-detail:hover {
+    color: #eb7350;
+}
+
+.select-page {
+    font-size: 14px;
+    color: #333;
+    align-self: center;
+}
+
+.card {
+    background-color: rgba(220, 240, 234, .5);
+    padding: .5rem;
+    margin-bottom: 2rem;
+    border-radius: 6px;
+}
+
+.card p {
+    font-size: medium;
+    letter-spacing: 2px;
+}
+
+#nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 5;
+    margin-right: 1rem;
+    padding: .5rem;
+}
+
+#nav > a {
+    display: block;
+    padding: .5rem 0;
+    color: #333;
+    cursor: pointer;
+    width: 9rem;
+    margin-right: .5rem;
+    justify-content: center;
+    text-align: center;
+}
+
+#nav > a:hover {
+    color: #eb7350;
+}
+
+#nav-head {
+    display: flex;
+    justify-content: space-around;
+    margin: .5rem;
+
+}
+
+.arrow {
+    display: inline;
+    width: 25px;
+    height: 30px;
+    line-height: 30px;
+    letter-spacing: -2px;
+    background-image: linear-gradient(135deg, #edcd50 40%, #a6da46);
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    margin: 2px;
+    padding-right: 2px;
+    text-align: center;
+}
+
+.arrow:active {
+    box-shadow: 2px 2px 5px #f7ab82;
+}
+
+h6 {
+    text-align: left;
+}
+
+img {
+    max-width: 250px;
+    max-height: 350px;
+    border-radius: 9px;
+}
+
+p {
+    color: #333;
+    line-height: 24px;
+    font-size: 14px;
+    margin: 0 0 .5rem 0;
+    padding: 0;
+}
+
+.active {
+    background-color: azure;
+    color: #eb7350;
+}
+
+@media only screen and (min-width: 578px) {
+    #wrapper {
+        width: 40%;
+
+    }
+
+    #page-bar {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        right: 1px;
+        top: 10px;
+        background-color: beige;
+        margin: 1rem 1rem;
+        border-radius: 9px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    img {
+        max-width: 100%;
+    }
+
+    #page-bar a {
+        display: none;
+    }
+}
+
+/*博文详情上下翻页*/
+.post-prev {
+    position: absolute;
+    bottom: -2rem;
+    left: 6rem;
+}
+
+.post-next {
+    position: absolute;
+    bottom: -2rem;
+    right: 6rem;
+}
+
